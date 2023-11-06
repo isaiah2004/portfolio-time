@@ -8,13 +8,14 @@ import { ContainerModule } from './ui/container/container.module';
 import { SharedModule } from './ui/@shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiModule } from './api/api.module';
-import { GithubDataComponent } from './github-data/github-data.component';
+// import { GithubDataComponent } from './github-data/github-data.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    GithubDataComponent
+    AppComponent
+    // GithubDataComponent
   ],
+
   imports: [
     BrowserModule,
     HttpClientModule,

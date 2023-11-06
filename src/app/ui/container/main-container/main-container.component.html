@@ -1,7 +1,7 @@
-<div class="main tb-height--full junkie" style="">
+<div class="main tb-height--full junkie">
     <mat-toolbar [@transitionFromTop]="{value:'in', params: {animDelay: 200}}"
     (@transitionFromTop.done)='_onToolbarAnimationEnd($event)'
-    appWidgetWaterfall [waterfallReferenceTarget]="contentScroller"
+
         waterfallReferenceLink="dashboard-content" waterfallActiveClass="active"
         class="junkie-top-nav tb-position--absolute tb-width--full tb-z-index--3 tb-padding--v-4">
         <mat-toolbar-row>
@@ -86,3 +86,4 @@
 
     </mat-sidenav-container>-->
 </div>
+<!-- appWidgetWaterfall [waterfallReferenceTarget]="contentScroller" -->

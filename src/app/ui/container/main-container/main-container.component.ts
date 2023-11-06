@@ -4,6 +4,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { fromEvent, Subscription } from 'rxjs';
 import { ScrollEventService } from 'src/app/core/scroll/scroll-event.service';
 import { ENTER_FORM_TOP } from '../../animations/transitions/transitions.constants';
+import { WidgetWaterfallDirective } from '../../widgets/widget-waterfall/widget-waterfall.module';
+
 
 @Component({
   selector: 'app-main-container',

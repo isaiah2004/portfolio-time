@@ -14,10 +14,10 @@ import { UiUtilsView } from 'src/app/ui/utils/views.utils';
   ]
 })
 export class HomePlatformsComponent implements OnInit {
-  
+
   private destroyed$: ReplaySubject<boolean> = new ReplaySubject(1);
   mOnceAnimated = false
- 
+
   /* ********************************************************************************************
     *                anims
     */
@@ -30,7 +30,7 @@ export class HomePlatformsComponent implements OnInit {
 
 
   @ViewChild('animRefView') vAnimRefView?: ElementRef<HTMLElement>;
-  
+
   constructor(public el: ElementRef,
     private _ngZone: NgZone,
     private cdr: ChangeDetectorRef,
@@ -40,14 +40,14 @@ export class HomePlatformsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
+
 
   ngAfterViewInit(): void {
     this.setupAnimation();
   }
 
   ngOnDestroy(): void {
-    
+
     this.destroyed$.next(true)
     this.destroyed$.complete()
   }
@@ -71,7 +71,7 @@ export class HomePlatformsComponent implements OnInit {
 
       }),
       scan<number, boolean>((acc: number | boolean, val: number) => (val >= this._mThreshold || (acc ? val > 0 : false))),
-      // Distincts the resulting triggers 
+      // Distincts the resulting triggers
       distinctUntilChanged(),
       // Stop taking the first on trigger when aosOnce is set
       takeWhile(trigger => {
