@@ -27,7 +27,7 @@
 
 ```bash
 $ git clone https://github.com/isaiah2004/portfolio-time.github.io.git
-$ cd braydoncoyer.dev
+$ cd portfolio-time
 $ npm install
 $ ng serve
 ```
